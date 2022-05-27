@@ -1,0 +1,14 @@
+ <a-assets>
+     <a-asset-item id="burger-model" src="burger/scene.gltf"></a-asset-item>
+    </a-assets>
+    <a-marker id="burger-marker" type="pattern" url="marker/pattern-burger.patt" cursor='rayOrigin:mouse' marker-handler>
+        <a-entity id="3dburger-model" position="-1 1 0.1" scale="0.4 0.4 0.4" gltf-model="#burger-model" gesture-handler>
+
+        </a-entity>
+        <a-plane position="0 0 0" rotation="-90 0 0" width="1.5" height="1.5">
+            <a-plane position="0 0.89 0.02" width="1.4" height="0.3" rotation="0 0 0" color="red">
+                <a-entity position="0 0 0.1" rotation="0 0 0" text="font:monoid;value:Cheesy Burger;color:purple;align:center"></a-entity>
+            </a-plane>
+        </a-plane>
+
+    </a-marker>
